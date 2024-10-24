@@ -1,19 +1,13 @@
 const navBar = document.querySelector("#nav");
+const heroImage = document.querySelector("#hero-img-container");
+const heroTitle = document.querySelector(".hero-main-title");
 
-const callback = (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("is-visible");
-    } else {
-      entry.target.classlist.remove("is-visible");
-    }
-  });
-};
+function addClassOnLoad(elements, className) {
+  window.addEventListener("load", () => {
+    elements.forEach(element => {
+      element.classList.add(className);
+    })
+  })
+}
 
-const observer = new IntersectionObserver(callback, {
-  root: null,
-  rootMargin: '0px',
-  treshold: 0.1
-})
-
-observer.observe(navBar);
+addClassOnLoad([navBar, heroImage, heroTitle], 'is-visible');
