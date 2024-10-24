@@ -5,7 +5,7 @@
 }
 
 #nav {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   margin: 1rem;
   display: flex;
   justify-content: space-between;
@@ -49,4 +49,15 @@
       transform: scale(1.2);
     }
   }
+}
+
+.fade-in {
+  opacity:0;
+  transform: translateY(-5vh);
+  transition: opacity 1s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
