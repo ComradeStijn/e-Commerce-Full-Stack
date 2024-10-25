@@ -129,6 +129,12 @@ h1.is-visible {
   max-width: 50rem;
   padding: 1rem;
 
+  transform: translateY(20vh);
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+
+
   img {
     max-width: 50%;
     aspect-ratio: 1;
@@ -186,10 +192,6 @@ h1.is-visible {
     }
   }
 
-  transform: translateY(20vh);
-  opacity: 0;
-  will-change: opacity, transform;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
 
   &.is-visible {
     opacity: 1;
