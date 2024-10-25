@@ -32,6 +32,7 @@ function addClassOnLoad(elements, className) {
 addClassOnLoad([navBar, heroImage, heroTitle], "is-visible");
 
 const productElements = document.querySelectorAll(".product");
+const footerElement = document.querySelector('footer');
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -42,10 +43,11 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.5,
+    threshold: 0.1,
     root: null,
     rootMargin: '0px',
   }
 );
 
 productElements.forEach(element => observer.observe(element));
+observer.observe(footerElement);

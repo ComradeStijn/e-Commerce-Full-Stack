@@ -1,3 +1,4 @@
+import "../assets/nav.scss";
 import "./home.scss";
 import "./fadein.js";
 
