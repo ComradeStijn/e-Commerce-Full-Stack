@@ -1,102 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ServaShop</title>
-  <link rel="stylesheet" href="./src/assets/reset.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-  <script type="module" src="./src/home/home.js" defer></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ServaShop</title>
+    <link rel="stylesheet" href="./src/assets/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="./src/home/home.js" defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
-</head>
-<body>
-  <nav class="fade-in" aria-label="Main navigation" id="nav">
-    <div class="main-logo">ServaShop</div>
-    <ul class="main-links">
-      <li><a href="#product-phone">Phones</a></li>
-      <li><a href="#product-tablet">Tablets</a></li>
-      <li><a href="#product-pc">PC</a></li>
-      <li><a href="#product-smartwatch">Smartwatch</a></li>
-    </ul>
-    <div id="main-right">
+  </head>
+  <body>
+    <nav class="fade-in" aria-label="Main navigation" id="nav">
+      <div class="main-logo">ServaShop</div>
       <ul class="main-links">
-        <li>User</li>
-        <Li>Cart</Li>
+        <li><a href="#product-phone">Phones</a></li>
+        <li><a href="#product-tablet">Tablets</a></li>
+        <li><a href="#product-pc">PC</a></li>
+        <li><a href="#product-smartwatch">Smartwatch</a></li>
       </ul>
-    </div>
-  </nav>
-  <main>
-    <h1 class="hero-main-title">Elevate your&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Tech Game</h1>
-    <div id="hero-img-container"><img id="hero-img" src="#" alt="" height="4000px" width="6000px"></div>
-
-    <section id="product-container">
-      <article id="product-phone" class="product">
-        <img class="product-img" src="#" alt="#">
-        <div class="product-text">
-          <h2 class="product-title">Phones</h2>
-          <p class="product-description">Next-gen performance in pocket-sized gadgets</p>
-          <button class="product-btn">Explore</button>
-        </div>
-      </article>
-
-      <article id="product-tablet" class="product">
-        <img class="product-img" src="#" alt="#">
-        <div class="product-text">
-          <h2 class="product-title">Tablets</h2>
-          <p class="product-description">Relax or work with these performant workhorses</p>
-          <button class="product-btn">Explore</button>
-        </div>
-      </article>
-
-      <article id="product-pc" class="product">
-        <img class="product-img" src="#" alt="#">
-        <div class="product-text">
-          <h2 class="product-title">PC</h2>
-          <p class="product-description">Whether at home or on the go, our PC's deliver performance on-demand</p>
-          <button class="product-btn">Explore</button>
-        </div>
-      </article>
-
-      <article id="product-smartwatch" class="product">
-        <img class="product-img" src="#" alt="#">
-        <div class="product-text">
-          <h2 class="product-title">Smartwatches</h2>
-          <p class="product-description">Stylish and functional</p>
-          <button class="product-btn">Explore</button>
-        </div>
-      </article>
-    </section>
-  </main>
-  <footer>
-    <div class="grid-container">
-      <div class="grid-element">
-        <div class="main-logo">ServaShop</div>
-        <p>
-          ServaShop Corporate Headquarter <br>
-          Sukhumvit Road, <br>
-          Bangkok 10330 Thailand <br>
-        </p>
-        <p>
-          +1 000 000 1 <br>
-          <a href="mailto:contact@sample.com">contact@sample.com</a>
-        </p>
-      </div>
-      <div class="grid-line"></div>
-      <div class="grid-element">
-        <h1>Newsletter</h1>
-        <p>Subscribe to receive the latest updates</p>
-        <button class="sign-btn">Sign up now</button>
-        <h1>Follow us</h1>
-        <ul class="social-media-links">
-          <li><a href="#" class="fa fa-facebook"></a></li>
-          <li><a href="#" class="fa fa-linkedin"></a></li>
-          <li><a href="#" class="fa fa-instagram"></a></li>
-          <li><a href="#" class="fa fa-twitter"></a></li>
+      <div id="main-right">
+        <ul class="main-links">
+          <li>User</li>
+          <li>Cart</li>
         </ul>
       </div>
-    </div>
-  </footer>
-</body>
+    </nav>
+    <main>
+      <h1 class="hero-main-title">
+        Elevate your&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />Tech Game
+      </h1>
+      <div id="hero-img-container">
+        <img id="hero-img" src="#" alt="" height="4000px" width="6000px" />
+      </div>
+
+      <div class="slide-container">
+        <div class="slide">
+          <div class="slide-number">1/3</div>
+          <img id="iphone" src="" alt=""/>
+          <div class="slide-text">iPhone</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-number">2/3</div>
+          <img id="zflip" src="" alt=""/>
+          <div class="slide-text">Samsung Galaxy Z-Flip</div>
+        </div>
+
+        <div class="slide">
+          <div class="slide-number">3/3</div>
+          <img id="macbook" src="" alt=""/>
+          <div class="slide-text">Macbook</div>
+        </div>
+
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div class="dots">
+          <span class="dot" data-id="0"></span>
+          <span class="dot" data-id="1"></span>
+          <span class="dot" data-id="2"></span>
+        </div>
+      </div>
+
+      <section id="product-container">
+        <article id="product-phone" class="product">
+          <img class="product-img" src="#" alt="#" />
+          <div class="product-text">
+            <h2 class="product-title">Phones</h2>
+            <p class="product-description">
+              Next-gen performance in pocket-sized gadgets
+            </p>
+            <button class="product-btn">Explore</button>
+          </div>
+        </article>
+
+        <article id="product-tablet" class="product">
+          <img class="product-img" src="#" alt="#" />
+          <div class="product-text">
+            <h2 class="product-title">Tablets</h2>
+            <p class="product-description">
+              Relax or work with these performant workhorses
+            </p>
+            <button class="product-btn">Explore</button>
+          </div>
+        </article>
+
+        <article id="product-pc" class="product">
+          <img class="product-img" src="#" alt="#" />
+          <div class="product-text">
+            <h2 class="product-title">PC</h2>
+            <p class="product-description">
+              Whether at home or on the go, our PC's deliver performance
+              on-demand
+            </p>
+            <button class="product-btn">Explore</button>
+          </div>
+        </article>
+
+        <article id="product-smartwatch" class="product">
+          <img class="product-img" src="#" alt="#" />
+          <div class="product-text">
+            <h2 class="product-title">Smartwatches</h2>
+            <p class="product-description">Stylish and functional</p>
+            <button class="product-btn">Explore</button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="grid-container">
+        <div class="grid-element">
+          <div class="main-logo">ServaShop</div>
+          <p>
+            ServaShop Corporate Headquarter <br />
+            Sukhumvit Road, <br />
+            Bangkok 10330 Thailand <br />
+          </p>
+          <p>
+            +1 000 000 1 <br />
+            <a href="mailto:contact@sample.com">contact@sample.com</a>
+          </p>
+        </div>
+        <div class="grid-line"></div>
+        <div class="grid-element">
+          <h1>Newsletter</h1>
+          <p>Subscribe to receive the latest updates</p>
+          <button class="sign-btn">Sign up now</button>
+          <h1>Follow us</h1>
+          <ul class="social-media-links">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

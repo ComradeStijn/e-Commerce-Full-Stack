@@ -1,5 +1,3 @@
-
-
 main {
   margin: 0 1rem;
 }
@@ -74,7 +72,6 @@ h1.is-visible {
   will-change: opacity, transform;
   transition: opacity 0.6s ease-out, transform 1.2s ease-out;
 
-
   img {
     max-width: 50%;
     aspect-ratio: 1;
@@ -132,7 +129,6 @@ h1.is-visible {
     }
   }
 
-
   &.is-visible {
     opacity: 1;
     transform: translateY(0vh);
@@ -141,13 +137,13 @@ h1.is-visible {
 
 footer {
   background-color: black;
-  color: white;  
+  color: white;
   padding: 3rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(50%);
   transition: all 1s ease-out;
-  
+
   .main-logo {
     font-size: 2rem;
   }
@@ -157,7 +153,7 @@ footer {
   p {
     margin-bottom: 1.5rem;
 
-    a{
+    a {
       color: white;
     }
   }
@@ -175,7 +171,6 @@ footer.is-visible {
   max-width: 1500px;
   margin: 0 auto;
 
-
   .grid-element {
     max-width: 100%;
   }
@@ -191,13 +186,14 @@ footer.is-visible {
     transition: all 0.2s ease-in-out;
   }
 
-  .sign-btn:hover, .sign-btn:focus {
+  .sign-btn:hover,
+  .sign-btn:focus {
     cursor: pointer;
     background-color: white;
     color: black;
     transform: scale(1.1);
   }
-  
+
   ul.social-media-links {
     display: flex;
   }
@@ -227,8 +223,119 @@ footer.is-visible {
   padding: 0.3rem;
   border-radius: 5px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: black;
     background-color: white;
+  }
+}
+
+.slide-container {
+  position: relative;
+  max-width: 1500px;
+  max-height: 650px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  // background-color: black;
+  // visibility: hidden;
+  opacity: 0;
+  transform: translateY(20vh);
+  transition: all 2s ease-out;
+
+  &.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .slide {
+    position: relative;
+    width: 1500px;
+    height: 650px;
+    display: none;
+    animation: fade-in 2s alternate;
+  }
+
+  .slide img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+ 
+
+  @keyframes fade-in {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    width: auto;
+    margin-top: -2rem;
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.6s ease;
+  }
+
+  .next {
+    left: auto;
+    right: 1rem;
+  }
+
+  .slide-text {
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .slide-number {
+    color: white;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .dots {
+    position: absolute;
+    bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+  }
+  .dot {
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #dfdfdf56;
+  }
+  .active,
+  .dot:hover {
+    background-color: rgba(65, 65, 65, 0.8);
   }
 }

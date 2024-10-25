@@ -33,6 +33,7 @@ addClassOnLoad([navBar, heroImage, heroTitle], "is-visible");
 
 const productElements = document.querySelectorAll(".product");
 const footerElement = document.querySelector('footer');
+const sliderElement = document.querySelector('.slide-container');
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -51,3 +52,4 @@ const observer = new IntersectionObserver(
 
 productElements.forEach(element => observer.observe(element));
 observer.observe(footerElement);
+observer.observe(sliderElement);
